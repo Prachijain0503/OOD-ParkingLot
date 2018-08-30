@@ -5,16 +5,16 @@ import java.util.HashMap;
 public abstract class Vehicle {
     String vehicleNumber;
     SpotType spotNeeded;
-    HashMap<String, ParkingSpot> location = new HashMap<String, ParkingSpot>();
+    ParkingLot parkingLot = new ParkingLot();
 
-    public void parkVehicle(ParkingSpot s) {
-        location.put(this.vehicleNumber,s);
-    }
-
-        public void unPark(){
-
+        public void unPark(Vehicle vehicle){
+        parkingLot.unPark(vehicle);
         }
 
     public abstract boolean isSpotAvailable(ParkingSpot spot);
 
+    public void park(Vehicle vehicle) {
+
+        parkingLot.parkVehicle(vehicle);
+    }
 }

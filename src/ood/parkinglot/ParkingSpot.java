@@ -2,19 +2,15 @@ package ood.parkinglot;
 
 public class ParkingSpot {
 
-    Vehicle vehicle;
-    SpotType spotType;
-  int row;
+  //  SpotType spotType;
+  int rowNumber;
   int spotNumber;
 
-    public ParkingSpot(Vehicle vehicle, SpotType spotType, int row, int spotNumber) {
-        this.vehicle = vehicle;
-        this.spotType = spotType;
-        this.row = row;
+    public ParkingSpot(SpotType spotType, int rowNumber, int spotNumber) {
+
+      //  this.spotType = spotType;
+        this.rowNumber = rowNumber;
         this.spotNumber = spotNumber;
     }
 
-    public boolean isAvailable() {
-        return vehicle == null;
-    }
 }
