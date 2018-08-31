@@ -3,38 +3,35 @@ package ood.parkinglot;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ParkingLot {
+public abstract class ParkingLot {
     int rows;
-    int totalSpots = 10;
-    int regularSpots =5;
-    int handicappedSpots =2;
+    int totalSpots;
+    int regularSpots;
+    int handicappedSpots;
     HashMap<ParkingSpot,Boolean> spots;
 
     HashMap<String, ParkingSpot> location = new HashMap<String, ParkingSpot>();
 
-    public void parkVehicle(Vehicle vehicle) {
+    public Receipt parkVehicle(Vehicle vehicle) {
         if(totalSpots > 0) {
-            ParkingSpot emptySpot = searchSpot(spots);
+            ParkingSpot emptySpot = searchSpot();
             if(emptySpot != null) {
                 location.put(vehicle.vehicleNumber, emptySpot);
+                Receipt receipt = new Receipt(vehicle, emptySpot);
                 totalSpots--;
+                return receipt;
             }
         }
+        return null;
     }
 
-    public void unPark(Vehicle vehicle){
-        ParkingSpot s = location.get(vehicle.vehicleNumber);
+    public void unPark(Receipt receipt){
+        ParkingSpot s = location.get(receipt.getVehicle().getVehicleNumber());
         totalSpots++;
         spots.put(s,false);
 
     }
 
-    private ParkingSpot searchSpot(HashMap<ParkingSpot, Boolean> spots) {
-        for (Map.Entry<ParkingSpot,Boolean> s: spots.entrySet()) {
-            if(s.getValue()==false)
-                return s.getKey();
-        }
-        return null;
-    }
+    abstract ParkingSpot searchSpot() ;
 
 }

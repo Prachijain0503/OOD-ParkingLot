@@ -1,20 +1,30 @@
 package ood.parkinglot;
 
-import java.util.HashMap;
-
-public abstract class Vehicle {
+public class Vehicle {
     String vehicleNumber;
     SpotType spotNeeded;
-    ParkingLot parkingLot = new ParkingLot();
+    ParkingLot parkingLot = new FirstEmptyParkingLot();
 
-        public void unPark(Vehicle vehicle){
-        parkingLot.unPark(vehicle);
+    public Vehicle(String s) {
+        this.vehicleNumber = s;
+    }
+
+    public void unPark(Receipt receipt){
+        parkingLot.unPark(receipt);
         }
 
-    public abstract boolean isSpotAvailable(ParkingSpot spot);
+    public Receipt park(Vehicle vehicle) {
 
-    public void park(Vehicle vehicle) {
-
-        parkingLot.parkVehicle(vehicle);
+        Receipt receipt = parkingLot.parkVehicle(vehicle);
+        return receipt;
     }
+
+    public String getVehicleNumber() {
+        return vehicleNumber;
+    }
+//    public boolean isSameVehicle(Vehicle vehicle){
+//        if(vehicle.vehicleNumber == this.vehicleNumber){
+//            re
+//        }
+//    }
 }
