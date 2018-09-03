@@ -1,30 +1,25 @@
 package ood.parkinglot;
 
-public class Vehicle {
-    String vehicleNumber;
-    SpotType spotNeeded;
-    ParkingLot parkingLot = new FirstEmptyParkingLot();
+import java.util.Objects;
 
-    public Vehicle(String s) {
-        this.vehicleNumber = s;
+class Vehicle {
+    private String vehicleNumber;
+
+    Vehicle(String vehicleNumber) {
+        this.vehicleNumber = vehicleNumber;
     }
 
-    public void unPark(Receipt receipt){
-        parkingLot.unPark(receipt);
-        }
 
-    public Receipt park(Vehicle vehicle) {
-
-        Receipt receipt = parkingLot.parkVehicle(vehicle);
-        return receipt;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Vehicle vehicle = (Vehicle) o;
+        return Objects.equals(vehicleNumber, vehicle.vehicleNumber);
     }
 
-    public String getVehicleNumber() {
-        return vehicleNumber;
+    @Override
+    public int hashCode() {
+        return Objects.hash(vehicleNumber);
     }
-//    public boolean isSameVehicle(Vehicle vehicle){
-//        if(vehicle.vehicleNumber == this.vehicleNumber){
-//            re
-//        }
-//    }
 }

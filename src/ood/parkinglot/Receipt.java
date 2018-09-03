@@ -1,23 +1,16 @@
 package ood.parkinglot;
 
-import java.sql.Time;
+class Receipt {
 
-public class Receipt {
-    Vehicle vehicle;
-    ParkingSpot parkingSpot;
-    Long time;
+    private final ParkingSpot parkingSpot;
 
-    public Receipt(Vehicle vehicle, ParkingSpot parkingSpot) {
-        this.vehicle = vehicle;
+    Receipt(ParkingSpot parkingSpot) {
+
         this.parkingSpot = parkingSpot;
-        this.time = System.nanoTime();
     }
 
-    public Vehicle getVehicle() {
-        return vehicle;
-    }
 
-    public ParkingSpot getParkingSpot() {
+    ParkingSpot getParkingSpot() {
         return parkingSpot;
     }
 }

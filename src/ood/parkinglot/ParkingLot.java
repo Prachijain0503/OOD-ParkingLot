@@ -3,35 +3,51 @@ package ood.parkinglot;
 import java.util.HashMap;
 import java.util.Map;
 
-public abstract class ParkingLot {
-    int rows;
-    int totalSpots;
-    int regularSpots;
-    int handicappedSpots;
-    HashMap<ParkingSpot,Boolean> spots;
+class ParkingLot {
 
-    HashMap<String, ParkingSpot> location = new HashMap<String, ParkingSpot>();
+    private int totalSpots;
+    private final Map<ParkingSpot, Boolean> spots;
+    private ParkingLotType parkingLotType;
 
-    public Receipt parkVehicle(Vehicle vehicle) {
-        if(totalSpots > 0) {
+    private final Map<Receipt, Vehicle> location;
+
+    protected ParkingLot(int totalSpots, Map<ParkingSpot, Boolean> spots, ParkingLotType parkingLotType) {
+        this.totalSpots = totalSpots;
+        this.spots = spots;
+        this.parkingLotType = parkingLotType;
+        location = new HashMap<>();
+    }
+
+    Receipt parkVehicle(Vehicle vehicle) {
+        if (totalSpots > 0) {
             ParkingSpot emptySpot = searchSpot();
-            if(emptySpot != null) {
-                location.put(vehicle.vehicleNumber, emptySpot);
-                Receipt receipt = new Receipt(vehicle, emptySpot);
+            if (emptySpot != null) {
+                Receipt receipt = new Receipt(emptySpot);
+                location.put(receipt, vehicle);
+                spots.put(emptySpot,true);
                 totalSpots--;
+                if(totalSpots==0) {
+                    ParkingManager.notifyAvailability(false);
+                }
                 return receipt;
             }
         }
+
         return null;
     }
 
-    public void unPark(Receipt receipt){
-        ParkingSpot s = location.get(receipt.getVehicle().getVehicleNumber());
+    Vehicle unPark(Receipt receipt) {
+        Vehicle vehicle = location.get(receipt);
         totalSpots++;
-        spots.put(s,false);
+        if(totalSpots==1)
+            ParkingManager.notifyAvailability(true);
+        spots.put(receipt.getParkingSpot(), false);
+        return vehicle;
 
     }
 
-    abstract ParkingSpot searchSpot() ;
+     private ParkingSpot searchSpot(){
+        return parkingLotType.searchSpot(spots);
+     }
 
 }
