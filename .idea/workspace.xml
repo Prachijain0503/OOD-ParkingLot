@@ -3,17 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="347f0680-ebc2-469e-9dc5-3a0d72a258e4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ood-ParkingLot/ood/parkinglot/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ood-ParkingLot/ood/parkinglot/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ood-ParkingLot/ood/parkinglot/ParkingLot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ood-ParkingLot/ood/parkinglot/ParkingLot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ood-ParkingLot/ood/parkinglot/ParkingSpot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ood-ParkingLot/ood/parkinglot/ParkingSpot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ood-ParkingLot/ood/parkinglot/SpotType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ood-ParkingLot/ood/parkinglot/Vehicle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ood-ParkingLot/ood/parkinglot/Vehicle.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ood/parkinglot/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ood/parkinglot/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ood/parkinglot/ParkingLot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ood/parkinglot/ParkingLot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ood/parkinglot/ParkingLotType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ood/parkinglot/ParkingLotType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ood/parkinglot/ParkingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ood/parkinglot/ParkingManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ood/parkinglot/Receipt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ood/parkinglot/Receipt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ood/parkinglot/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ood/parkinglot/Vehicle.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,12 +39,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2031" />
+          <entry key="java" value="2056" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2031" />
+          <entry key="JAVA" value="2056" />
         </counts>
       </usages-collector>
     </session>
@@ -63,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ood/parkinglot/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+            <state relative-caret-position="270">
+              <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -89,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ood/parkinglot/ParkingLot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+            <state relative-caret-position="15">
+              <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ood/parkinglot/ParkingManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+            <state relative-caret-position="105">
+              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -131,7 +122,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ood/parkinglot/Vehicle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
+            <state relative-caret-position="330">
               <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
             </state>
           </provider>
@@ -140,8 +131,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ood/parkinglot/ParkingSpot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+            <state relative-caret-position="120">
+              <caret line="8" column="22" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -169,11 +160,11 @@
         <option value="$PROJECT_DIR$/src/ood/parkinglot/FirstEmptyParkingLot.java" />
         <option value="$PROJECT_DIR$/src/ood/parkinglot/LastEmptyParkingLot.java" />
         <option value="$PROJECT_DIR$/src/ood/parkinglot/ParkingSpot.java" />
-        <option value="$PROJECT_DIR$/src/ood/parkinglot/ParkingManager.java" />
         <option value="$PROJECT_DIR$/src/ood/parkinglot/ParkingLotType.java" />
         <option value="$PROJECT_DIR$/src/ood/parkinglot/ParkingLot.java" />
         <option value="$PROJECT_DIR$/src/ood/parkinglot/Vehicle.java" />
         <option value="$PROJECT_DIR$/src/ood/parkinglot/Receipt.java" />
+        <option value="$PROJECT_DIR$/src/ood/parkinglot/ParkingManager.java" />
         <option value="$PROJECT_DIR$/src/ood/parkinglot/Main.java" />
       </list>
     </option>
@@ -219,7 +210,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536048179803" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536048580036" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -326,45 +317,10 @@
     <entry file="file://$PROJECT_DIR$/ood-ParkingLot.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ood/parkinglot/ParkingManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-          <folding>
-            <element signature="e#225#226#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ood/parkinglot/ParkingLotType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ood/parkinglot/ParkingSpot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ood/parkinglot/Vehicle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ood/parkinglot/ParkingLot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -378,10 +334,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ood/parkinglot/ParkingSpot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ood/parkinglot/Vehicle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ood/parkinglot/ParkingLot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ood/parkinglot/ParkingManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ood/parkinglot/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+        <state relative-caret-position="270">
+          <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
         </state>
       </provider>
     </entry>

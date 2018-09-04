@@ -1,9 +1,10 @@
 package ood.parkinglot;
 
 public class ParkingManager {
-    private static boolean signal;
+    private boolean signal;
 
     public void notifyAvailability(boolean b) {
-        signal = b;
+
+        this.signal = b;
     }
 }
