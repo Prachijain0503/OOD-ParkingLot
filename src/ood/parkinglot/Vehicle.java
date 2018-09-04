@@ -22,4 +22,11 @@ class Vehicle {
     public int hashCode() {
         return Objects.hash(vehicleNumber);
     }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "vehicleNumber='" + vehicleNumber + '\'' +
+                '}';
+    }
 }

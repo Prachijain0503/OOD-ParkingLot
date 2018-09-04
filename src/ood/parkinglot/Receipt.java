@@ -9,6 +9,12 @@ class Receipt {
         this.parkingSpot = parkingSpot;
     }
 
+    @Override
+    public String toString() {
+        return "Receipt{" +
+                "parkingSpot=" + parkingSpot +
+                '}';
+    }
 
     ParkingSpot getParkingSpot() {
         return parkingSpot;

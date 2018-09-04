@@ -11,9 +11,9 @@ class ParkingLot {
 
     private final Map<Receipt, Vehicle> location;
 
-    protected ParkingLot(int totalSpots, Map<ParkingSpot, Boolean> spots, ParkingLotType parkingLotType) {
+    protected ParkingLot(int totalSpots, ParkingLotType parkingLotType) {
         this.totalSpots = totalSpots;
-        this.spots = spots;
+        this.spots = new HashMap<>();
         this.parkingLotType = parkingLotType;
         location = new HashMap<>();
     }
@@ -21,16 +21,16 @@ class ParkingLot {
     Receipt parkVehicle(Vehicle vehicle) {
         if (totalSpots > 0) {
             ParkingSpot emptySpot = searchSpot();
-            if (emptySpot != null) {
                 Receipt receipt = new Receipt(emptySpot);
                 location.put(receipt, vehicle);
                 spots.put(emptySpot,true);
                 totalSpots--;
                 if(totalSpots==0) {
-                    ParkingManager.notifyAvailability(false);
+                    ParkingManager parkingManager = new ParkingManager();
+                    parkingManager.notifyAvailability(false);
                 }
                 return receipt;
-            }
+
         }
 
         return null;
@@ -39,8 +39,10 @@ class ParkingLot {
     Vehicle unPark(Receipt receipt) {
         Vehicle vehicle = location.get(receipt);
         totalSpots++;
-        if(totalSpots==1)
-            ParkingManager.notifyAvailability(true);
+        if(totalSpots==1) {
+            ParkingManager parkingManager = new ParkingManager();
+            parkingManager.notifyAvailability(true);
+        }
         spots.put(receipt.getParkingSpot(), false);
         return vehicle;
 
